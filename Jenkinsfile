@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/kserge2001/maven-test.git'
+                git branch: 'master', url: 'https://github.com/aoit-admin/Jenkinsfile.git'
             }
         }
         stage ("Sonarqube scan") {
